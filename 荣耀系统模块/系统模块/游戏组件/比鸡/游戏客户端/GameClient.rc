@@ -1,0 +1,363 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳市网狐科技有限公司"
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "十三张游戏客户端"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "Thirteen.exe"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "Thirteen.exe"
+            VALUE "ProductName", "十三张游戏客户端"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_BT_SHOW_CARD        BITMAP                  "res\\buttons\\submit.bmp"
+IDB_BT_START            BITMAP                  "res\\buttons\\BeginGame.bmp"
+IDB_BT_FRONT_CARD       BITMAP                  "res\\buttons\\FstDump.bmp"
+IDB_BT_MID_CARD         BITMAP                  "res\\buttons\\SndDump.bmp"
+IDB_BT_BACK_CARD        BITMAP                  "res\\buttons\\ThdDump.bmp"
+IDB_RECYCLE             BITMAP                  "res\\buttons\\Recycle.bmp"
+IDB_RECYCLEALL          BITMAP                  "res\\buttons\\RecycleAll.bmp"
+IDB_OK                  BITMAP                  "res\\buttons\\ok.bmp"
+IDB_CANCEL              BITMAP                  "res\\buttons\\cancel.bmp"
+IDB_ONEPARE             BITMAP                  "res\\buttons\\1Pair.bmp"
+IDB_TWOPARE             BITMAP                  "res\\buttons\\2Pairs.bmp"
+IDB_THREESAME           BITMAP                  "res\\buttons\\3Tiao.bmp"
+IDB_STRAIGHT            BITMAP                  "res\\buttons\\ShunZi.bmp"
+IDB_FLUSH               BITMAP                  "res\\buttons\\TongHua.bmp"
+IDB_GOURD               BITMAP                  "res\\buttons\\HuLu.bmp"
+IDB_FOURSAME            BITMAP                  "res\\buttons\\TieZhi.bmp"
+IDB_STRAIGHTFLUSH       BITMAP                  "res\\buttons\\TongHuaShun.bmp"
+IDB_TAXIS               BITMAP                  "res\\buttons\\Sort.bmp"
+IDB_GAME_END            BITMAP                  "res\\GAME_END.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_VIEW_CENTER         PNG                     "res\\logo.png"
+IDB_VIEW_BACK           PNG                     "res\\backgnd.png"
+IDB_VIEW_CLOCK          PNG                     "res\\clockBk.png"
+IDB_VIEW_TIMER          PNG                     "res\\clockNum.png"
+IDB_VIEW_READY          PNG                     "res\\ready.png"
+IDB_VIEW_READY_CARD     PNG                     "res\\ReadyCard.png"
+IDB_VIEW_DAOSHUI        PNG                     "res\\DaoShui.png"
+IDB_VIEW_SCORE_FRAME    PNG                     "res\\ScoreFrame.png"
+IDB_VIEW_BTHBACK        PNG                     "res\\buttons\\btnBack.png"
+IDB_VIEW_CARD_FRAME     PNG                     "res\\CardFrame.png"
+IDB_CARD_TYPE           PNG                     "res\\CardType\\CardType.png"
+IDB_CARD_TYPE_BIG       PNG                     "res\\CardType\\CardTypeBig.png"
+IDB_SPECIAL_CARD_TYPE   PNG                     "res\\CardType\\SpecialCardType.png"
+IDB_SPECIAL_CARD_TYPE1  PNG                     "res\\CardType\\SpecialCardType1.png"
+IDB_MID_THREE_DEOUBLE   PNG                     "res\\CardType\\MidThreeDeouble.png"
+IDB_END_NUM_SMALL       PNG                     "res\\gameEndNumSmall.png"
+IDB_END_NUM_BIG         PNG                     "res\\gameEndNumBig.png"
+IDB_SHOOT1              PNG                     "res\\Gun1.png"
+IDB_SHOOT2              PNG                     "res\\Gun2.png"
+IDB_HOLE                PNG                     "res\\hole.png"
+IDB_CARD                PNG                     "res\\Card.png"
+IDB_BIG_CARD            PNG                     "res\\BigCard.png"
+IDB_SEND_CARD           PNG                     "res\\Deal.png"
+IDB_SHUFFLE_CARD        PNG                     "res\\Shuffle.png"
+IDB_ALL_KILL            PNG                     "res\\CardType\\AllKill.png"
+IDB_PLUS_BIG_NUM        PNG                     "res\\PlusBigNumber.png"
+IDB_PLUS_SMALL_NUM      PNG                     "res\\PlusSmallNumber.png"
+IDB_BIG_SUBTRACTION_SIGN PNG                     "res\\BigSubtractionSign.png"
+IDB_BIG_PLUS_SIGN       PNG                     "res\\BigPlusSign.png"
+IDB_SMALL_SUBTRACTION_SIGN PNG                     "res\\SmallSubtractionSign.png"
+IDB_SMALL_PLUS_SIGN     PNG                     "res\\SmallPlusSign.png"
+IDB_SPEC_CARD_FLASH     PNG                     "res\\SpecCardFlash.png"
+IDB_GAME_INFO           PNG                     "res\\gameInfo.png"
+IDB_BK                  PNG                     "res\\buttons\\bk.png"
+IDB_AYAKA               PNG                     "res\\movies\\Line2.png"
+IDB_SP                  PNG                     "res\\movies\\sp.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CARD_CUR            CURSOR                  "res\\CARD_CUR.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_ADMIN DIALOGEX 30, 30, 160, 99
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "赢",ID_WIN,8,79,32,14
+    PUSHBUTTON      "输",ID_LOSS,49,79,32,14
+    DEFPUSHBUTTON   "取消控制",ID_CANCLE_CENTROL,106,79,46,14
+    COMBOBOX        IDC_COMBO_USER,12,17,66,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COUNT,114,17,27,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "控制用户",IDC_STATIC,28,6,33,8
+    LTEXT           "次数",IDC_STATIC,118,6,17,8
+END
+
+IDD_SETCHIP DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "确定",IDOK,31,74,50,14
+    PUSHBUTTON      "取消",IDCANCEL,90,74,50,14
+    LTEXT           "压注大小：",IDC_STATIC,23,34,41,8
+    COMBOBOX        IDC_SETCHIP,65,31,58,57,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPTION DIALOGEX 0, 0, 193, 130
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,37,109,50,14
+    PUSHBUTTON      "取消",IDCANCEL,105,109,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,151,32,21,20
+    CONTROL         "允许声音效果",IDC_ENABLE_SOUND,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,23,34,64,10
+    COMBOBOX        IDC_CARD_SPACE,77,56,31,181,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    LTEXT           "扑克间距为",IDC_STATIC,23,58,41,9
+    LTEXT           "象素",IDC_STATIC,114,58,17,9
+    COMBOBOX        IDC_COMPARETIME,77,78,31,113,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "每墩比较时间",IDC_STATIC,23,80,49,8
+    LTEXT           "秒",IDC_STATIC,114,79,9,8
+    GROUPBOX        "普通设置",IDC_STATIC,16,23,121,73
+END
+
+IDD_GAME_SCORE DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_MYSTERY DIALOGEX 0, 0, 226, 138
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Mystery"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,43,117,50,14
+    PUSHBUTTON      "取消",IDCANCEL,125,117,50,14
+    GROUPBOX        "",IDC_STATIC,10,3,206,107
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,96,15,51,10
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,32,54,51,10
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,96,94,51,10
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,158,54,51,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SETCHIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_GAME_SCORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+GAME_WARN               WAVE                    "res\\WAV\\GAME_WARN.WAV"
+OUT_CARD                WAVE                    "res\\WAV\\OUT_CARD.WAV"
+GAME_SHUFFLE            WAVE                    "res\\WAV\\GAME_SHUFFLE.WAV"
+GAME_GUNREADY           WAVE                    "res\\WAV\\GAME_GUNREADY.WAV"
+GAME_GUN                WAVE                    "res\\WAV\\GAME_GUN.WAV"
+GAME_CARD               WAVE                    "res\\WAV\\GAME_CARD.WAV"
+BK_MUSIC                WAVE                    "res\\WAV\\BK_MUSIC.WAV"
+QUAN_LEI_DA             WAVE                    "res\\WAV\\QUAN_LEI_DA.WAV"
+COMPARE_CARD1           WAVE                    "res\\WAV\\ready\\COMPARECARD1.WAV"
+COMPARE_CARD2           WAVE                    "res\\WAV\\ready\\COMPARECARD2.WAV"
+COMPARE_CARD3           WAVE                    "res\\WAV\\ready\\COMPARECARD3.WAV"
+COMPARE_CARD4           WAVE                    "res\\WAV\\ready\\COMPARECARD4.WAV"
+COMPARE_CARD5           WAVE                    "res\\WAV\\ready\\COMPARECARD5.WAV"
+COMPARE_CARD6           WAVE                    "res\\WAV\\ready\\COMPARECARD6.WAV"
+ZHONG_DUN_HU_LU         WAVE                    "res\\WAV\\ZHONG_DUN_HU_LU.WAV"
+SAN_PAI                 WAVE                    "res\\WAV\\SAN_PAI.WAV"
+DUI_ZI                  WAVE                    "res\\WAV\\DUI_ZI.WAV"
+LIANG_DUI               WAVE                    "res\\WAV\\LIANG_DUI.WAV"
+SAN_TIAO                WAVE                    "res\\WAV\\SAN_TIAO.WAV"
+SHUN_ZI                 WAVE                    "res\\WAV\\SHUN_ZI.WAV"
+TONG_HUA                WAVE                    "res\\WAV\\TONG_HUA.WAV"
+HU_LU                   WAVE                    "res\\WAV\\HU_LU.WAV"
+TIE_ZI                  WAVE                    "res\\WAV\\TIE_ZI.WAV"
+TONG_HUA_SHUN           WAVE                    "res\\WAV\\TONG_HUA_SHUN.WAV"
+12HUANG_ZU              WAVE                    "res\\WAV\\12HUANG_ZU.WAV"
+4TAO_3TIAO              WAVE                    "res\\WAV\\4TAO_3TIAO.WAV"
+5DUI_3TIAO              WAVE                    "res\\WAV\\5DUI_3TIAO.WAV"
+CHOU_YI_SE              WAVE                    "res\\WAV\\CHOU_YI_SE.WAV"
+LIU_DUI_BAN             WAVE                    "res\\WAV\\LIU_DUI_BAN.WAV"
+QUAN_DA                 WAVE                    "res\\WAV\\GAME_WARN.WAV"
+QUAN_XIAO               WAVE                    "res\\WAV\\GAME_WARN.WAV"
+SAN_FEN_TIAN_XIA        WAVE                    "res\\WAV\\GAME_WARN.WAV"
+SAN_SHUN_ZI             WAVE                    "res\\WAV\\SAN_SHUN_ZI.WAV"
+SAN_TONG_HUA            WAVE                    "res\\WAV\\SAN_TONG_HUA.WAV"
+SAN_TONG_HUA_SHUN       WAVE                    "res\\WAV\\SAN_TONG_HUA_SHUN.WAV"
+YI_TIAO_LONG            WAVE                    "res\\WAV\\YI_TIAO_LONG.WAV"
+ZHI_ZUN_QING_LONG       WAVE                    "res\\WAV\\ZHI_ZUN_QING_LONG.WAV"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

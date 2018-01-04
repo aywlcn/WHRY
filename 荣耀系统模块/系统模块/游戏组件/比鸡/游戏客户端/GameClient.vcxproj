@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Unicode|Win32">
+      <Configuration>Debug_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Unicode|Win32">
+      <Configuration>Release_Unicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>十三张客户端</ProjectName>
+    <ProjectGuid>{F2D70F30-23FC-4973-A798-AED329359B33}</ProjectGuid>
+    <RootNamespace>十三张游戏</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);../../../../DirectX SDK/Include</IncludePath>
+    <GenerateManifest>true</GenerateManifest>
+    <EmbedManifest>true</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../../运行/Debug/Ansi/Thirteen.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Debug\Ansi
+copy /y ..\..\..\..\运行\Debug\Ansi\$(TargetFileName) ..\..\..\发布组件\客户端组件\Debug\Ansi\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../../运行/Release/Ansi/Thirteen.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Ansi
+copy /y ..\..\..\..\运行\Release\Ansi\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Ansi\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../../运行/Debug/unicode/Thirteen.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest />
+    <ManifestResourceCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../../../运行/Release/unicode/Thirteen.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <PostBuildEvent>
+      <Command>mkdir ..\..\..\发布组件\客户端组件\Release\Unicode
+copy /y ..\..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\客户端组件\Release\Unicode\$(TargetFileName)
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CardControl.cpp" />
+    <ClCompile Include="ClientControl.cpp" />
+    <ClCompile Include="GameClient.cpp" />
+    <ClCompile Include="GameClientDlg.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GameClientView.cpp" />
+    <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="GameOption.cpp" />
+    <ClCompile Include="MysteryDlg.cpp" />
+    <ClCompile Include="ScoreView.cpp" />
+    <ClCompile Include="SetChip.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\消息定义\CMD_Thirteen.h" />
+    <ClInclude Include="CardControl.h" />
+    <ClInclude Include="ClientControl.h" />
+    <ClInclude Include="GameClient.h" />
+    <ClInclude Include="GameClientDlg.h" />
+    <ClInclude Include="GameClientView.h" />
+    <ClInclude Include="GameLogic.h" />
+    <ClInclude Include="GameOption.h" />
+    <ClInclude Include="MysteryDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScoreView.h" />
+    <ClInclude Include="SetChip.h" />
+    <ClInclude Include="Stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\backgnd.png" />
+    <Image Include="Res\BigCard.png" />
+    <Image Include="Res\BigPlusSign.png" />
+    <Image Include="Res\BigSubtractionSign.png" />
+    <Image Include="Res\buttons\1Pair.bmp" />
+    <Image Include="Res\buttons\2Pairs.bmp" />
+    <Image Include="Res\buttons\3Tiao.bmp" />
+    <Image Include="Res\buttons\BeginGame.bmp" />
+    <Image Include="Res\buttons\bk.png" />
+    <Image Include="Res\buttons\btnBack.png" />
+    <Image Include="Res\buttons\cancel.bmp" />
+    <Image Include="Res\buttons\FstDump.bmp" />
+    <Image Include="Res\buttons\HuLu.bmp" />
+    <Image Include="Res\buttons\ok.bmp" />
+    <Image Include="Res\buttons\Recycle.bmp" />
+    <Image Include="Res\buttons\RecycleAll.bmp" />
+    <Image Include="Res\buttons\ShunZi.bmp" />
+    <Image Include="Res\buttons\SndDump.bmp" />
+    <Image Include="Res\buttons\Sort.bmp" />
+    <Image Include="Res\buttons\submit.bmp" />
+    <Image Include="Res\buttons\ThdDump.bmp" />
+    <Image Include="Res\buttons\TieZhi.bmp" />
+    <Image Include="Res\buttons\TongHua.bmp" />
+    <Image Include="Res\buttons\TongHuaShun.bmp" />
+    <Image Include="Res\Card.png" />
+    <Image Include="Res\CardFrame.png" />
+    <Image Include="Res\CardType\AllKill.png" />
+    <Image Include="Res\CardType\CardType.png" />
+    <Image Include="Res\CardType\CardTypeBig.png" />
+    <Image Include="Res\CardType\MidThreeDeouble.png" />
+    <Image Include="Res\CardType\SpecialCardType.png" />
+    <Image Include="Res\CardType\SpecialCardType1.png" />
+    <Image Include="Res\clockBk.png" />
+    <Image Include="Res\clockNum.png" />
+    <Image Include="Res\DaoShui.png" />
+    <Image Include="Res\Deal.png" />
+    <Image Include="res\GameClient.ico" />
+    <Image Include="Res\gameEndNumBig.png" />
+    <Image Include="Res\gameEndNumSmall.png" />
+    <Image Include="Res\gameInfo.png" />
+    <Image Include="Res\GAME_END.bmp" />
+    <Image Include="Res\GAME_LOGO.bmp" />
+    <Image Include="Res\Gun1.png" />
+    <Image Include="Res\Gun2.png" />
+    <Image Include="Res\hole.png" />
+    <Image Include="Res\logo.png" />
+    <Image Include="Res\movies\Line2.png" />
+    <Image Include="Res\movies\sp.png" />
+    <Image Include="Res\PlusBigNumber.png" />
+    <Image Include="Res\PlusSmallNumber.png" />
+    <Image Include="Res\ready.png" />
+    <Image Include="Res\ReadyCard.png" />
+    <Image Include="Res\ScoreFrame.png" />
+    <Image Include="Res\Shuffle.png" />
+    <Image Include="Res\SmallPlusSign.png" />
+    <Image Include="Res\SmallSubtractionSign.png" />
+    <Image Include="Res\SpecCardFlash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\CARD_CUR.cur" />
+    <None Include="res\GameClient.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Res\Wav\12HUANG_ZU.wav" />
+    <Media Include="Res\Wav\4TAO_3TIAO.wav" />
+    <Media Include="Res\Wav\5DUI_3TIAO.wav" />
+    <Media Include="Res\Wav\BK_MUSIC.wav" />
+    <Media Include="Res\Wav\CHOU_YI_SE.wav" />
+    <Media Include="Res\Wav\DUI_ZI.wav" />
+    <Media Include="Res\Wav\GAME_CARD.wav" />
+    <Media Include="Res\Wav\GAME_GUN.wav" />
+    <Media Include="Res\Wav\GAME_GUNREADY.wav" />
+    <Media Include="Res\Wav\GAME_SHUFFLE.wav" />
+    <Media Include="Res\Wav\Game_warn.wav" />
+    <Media Include="Res\Wav\HU_LU.wav" />
+    <Media Include="Res\Wav\LIANG_DUI.wav" />
+    <Media Include="Res\Wav\LIU_DUI_BAN.wav" />
+    <Media Include="Res\Wav\OUT_CARD.wav" />
+    <Media Include="Res\Wav\QUAN_DA.wav" />
+    <Media Include="Res\Wav\QUAN_LEI_DA.wav" />
+    <Media Include="Res\Wav\QUAN_XIAO.wav" />
+    <Media Include="Res\Wav\ready\CompareCard1.wav" />
+    <Media Include="Res\Wav\ready\CompareCard2.wav" />
+    <Media Include="Res\Wav\ready\CompareCard3.wav" />
+    <Media Include="Res\Wav\ready\CompareCard4.wav" />
+    <Media Include="Res\Wav\ready\CompareCard5.wav" />
+    <Media Include="Res\Wav\ready\CompareCard6.wav" />
+    <Media Include="Res\Wav\SAN_FEN_TIAN_XIA.wav" />
+    <Media Include="Res\Wav\SAN_PAI.wav" />
+    <Media Include="Res\Wav\SAN_SHUN_ZI.wav" />
+    <Media Include="Res\Wav\SAN_TIAO.wav" />
+    <Media Include="Res\Wav\SAN_TONG_HUA.wav" />
+    <Media Include="Res\Wav\SAN_TONG_HUA_SHUN.wav" />
+    <Media Include="Res\Wav\SHUN_ZI.wav" />
+    <Media Include="Res\Wav\TIE_ZI.wav" />
+    <Media Include="Res\Wav\TONG_HUA.wav" />
+    <Media Include="Res\Wav\TONG_HUA_SHUN.wav" />
+    <Media Include="Res\Wav\YI_TIAO_LONG.wav" />
+    <Media Include="Res\Wav\ZHI_ZUN_QING_LONG.wav" />
+    <Media Include="Res\Wav\ZHONG_DUN_HU_LU.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\GameClient.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GameClient.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

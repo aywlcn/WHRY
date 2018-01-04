@@ -1,0 +1,36 @@
+diff a/荣耀系统模块/系统模块/服务器组件/登录服务器/AttemperEngineSink.cpp b/荣耀系统模块/系统模块/服务器组件/登录服务器/AttemperEngineSink.cpp	(rejected hunks)
+@@ -2434,6 +2434,34 @@
+ 
+ 			return true;
+ 		}
++	case SUB_GP_ACCOUNT_SPREADER_BINDING:
++	{
++		//Ч�����
++		ASSERT(wDataSize == sizeof(CMD_GP_AccountBind));
++		if (wDataSize != sizeof(CMD_GP_AccountBind)) return false;
++
++		//������Ϣ
++		CMD_GP_AccountSpreaderBind * pAccountBind = (CMD_GP_AccountSpreaderBind *)pData;
++		pAccountBind->szPassword[CountArray(pAccountBind->szPassword) - 1] = 0;
++
++
++
++		//��������
++		DBR_GP_AccountSpreaderBind AccountBind;
++		ZeroMemory(&AccountBind, sizeof(AccountBind));
++
++		//��������
++		AccountBind.dwUserID = pAccountBind->dwUserID;
++		lstrcpyn(AccountBind.szPassword, pAccountBind->szPassword, CountArray(AccountBind.szPassword));
++
++		AccountBind.dwSpreaderGameID = pAccountBind->dwBindNewSpreader;
++
++		//Ͷ������
++		m_pIDataBaseEngine->PostDataBaseRequest(DBR_GP_ACCOUNT_SPREADER_BIND, dwSocketID, &AccountBind, sizeof(AccountBind));
++
++		return true;
++	}
++		break;
+ 	case SUB_GP_ACCOUNT_BINDING:
+ 		{
+ 			//Ч�����
